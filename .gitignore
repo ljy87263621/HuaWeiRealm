@@ -1,0 +1,48 @@
+# Local development and code navigation
+.codegraph/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+
+# Build output (third-party development libraries remain versioned)
+/build/
+/build-*/
+/Client/build*/
+/Client/bin/
+/Server/chat_server
+*.o
+*.obj
+*.log
+*.tmp
+*.bak
+
+# Server runtime data; retain empty directory markers
+/Server/config/*
+!/Server/config/.gitkeep
+/Server/ChatHistory/*
+!/Server/ChatHistory/.gitkeep
+/Server/ServerLogs/*
+!/Server/ServerLogs/.gitkeep
+/Server/Attachments/*
+!/Server/Attachments/.gitkeep
+
+# Runtime data when launched from the repository root
+/config/
+/ChatHistory/
+/ServerLogs/
+/Attachments/
+/Downloads/
+/Emojis/
+
+# Client downloaded media
+/Client/Downloads/
+/Client/Emojis/
+
+# Local-only agent instructions
+AGENTS.md
